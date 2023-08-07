@@ -66,7 +66,7 @@ int concat_str(int arr[TIME_ARR_SIZE], char **result)
 }
 
 #define RES_SIZE 1024
-char *format_duration(int seconds)
+char *formatDuration(int seconds)
 {
 	int time_arr[TIME_ARR_SIZE] = {0, };
 	int years, days, hours, minutes;
@@ -107,7 +107,7 @@ int main(void)
 {
 	char *result;
 
-	result = format_duration(2520059);
+	result = formatDuration(2520059);
 	printf("%s\n", result);
 
 	free(result);
